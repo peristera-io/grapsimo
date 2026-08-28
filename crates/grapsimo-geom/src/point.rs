@@ -108,7 +108,7 @@ impl Vec2 {
     }
 
     /// normalize vector
-    /// UNDEFINED BEHAVIOUR FOR 0 vectors!
+    /// return NAN vector FOR 0 vectors!
     pub fn normalize(self) -> Self {
         let l = self.length();
         Self {
